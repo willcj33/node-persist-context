@@ -5,8 +5,8 @@ const _ = require('lodash');
 const BaseService = require('./baseService');
 
 class MockDataService extends BaseService {
-    constructor () {
-        super();
+    constructor (ctx, options) {
+        super(ctx);
         this.data = [
             { id: 1, name: 'test 1' },
             { id: 2, name: 'test 2' },
@@ -18,7 +18,7 @@ class MockDataService extends BaseService {
     getAll () {
         let self = this.getInstance();
         return new Q((resolve, reject) => {
-            resolve(self.data);
+            resolve(self.data);  
         });
     }
 
