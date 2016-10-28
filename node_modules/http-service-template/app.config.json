@@ -1,0 +1,19 @@
+{
+  "Placement": "hester.local",
+  "service": {
+    "host": "127.0.0.1",
+    "port": 8052
+  },
+  "logging": {
+    "loggers": "pretty",
+    "fluent": {
+      "host": "localhost",
+      "port": 8077,
+      "timeout": 3.0,
+      "minLevel": 30
+    },
+    "pretty": {
+      "minLevel": 20
+    }
+  }
+}

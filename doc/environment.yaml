@@ -1,0 +1,17 @@
+test-context-proxy_v1:
+
+  bind_host:
+    required: true
+    description: |
+      The host ip the publisher http server will bind to.
+
+  bind_port:
+    required: true
+    description: |
+      The port the publisher http server will bind to.
+
+  loggers:
+    required: true
+    default: pretty
+    description: |
+      A comma separated list of log-writers to use. options are currently fluent and pretty.

@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "required": true,
+  "properties": {
+    "item": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "name": {
+          "type": "string",
+          "required": true
+        }
+      }
+    }
+  }
+}
